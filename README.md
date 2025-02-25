@@ -1,0 +1,2 @@
+# DjangoTask
+Event Manager
