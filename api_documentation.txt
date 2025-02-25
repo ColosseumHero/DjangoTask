@@ -1,0 +1,37 @@
+Events manager API documentation
+
+API base URL: https://127.0.0.1:8000/api/v1
+
+Managing events API:
+
+1. Base URL: https://127.0.0.1:8000/api/v1/events (for a specific event: https://127.0.0.1:8000/api/v1/events/{specific_event_id})
+2. Data format: JSON
+3. Authentication: API key required (except for GET requests)
+4. Allowed methods: GET, POST, UPDATE, DELETE (method GET without authentication)
+5. Example Request (POST):
+    {
+      "title": "New Event",
+      "description": "This is a new event.",
+      "date": "2025-02-23",
+      "location": "Kyiv",
+      "organizer": "Oleksandr",
+      "category": 1
+    }
+
+User registration API:
+
+1. Base URL: https://127.0.0.1:8000/api/v1/users
+2. Data format: JSON
+3. Allowed methods: GET, POST (all allowed methods without authentication)
+4. Example Request (POST):
+    {
+      "username": "user",
+      "password": "yourpassword",
+      "email": "example@gmail.com"
+    }
+
+Categories API:
+
+1. Base URL: https://127.0.0.1:8000/api/v1/categories (for a specific category: https://127.0.0.1:8000/api/v1/events/{specific_category_id})
+2. Data format: JSON
+3. Allowed methods: GET (method GET without authentication)
